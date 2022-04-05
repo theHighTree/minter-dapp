@@ -20,6 +20,120 @@ const layerConfigurations = [
       { name: "OneonOne"},
     ],
   },
+  {
+    growEditionSizeTo: 10,
+    layersOrder: [
+      { name: "Acapulco Gold Background" },
+      { name: "Acapulco Gold Body"},
+      { name: "Acapulco Gold Eyes"},
+      { name: "Acapulco Gold Mouth"},
+    ],
+  },
+  {
+    growEditionSizeTo: 12,
+    layersOrder: [
+      { name: "Acapulco Gold Background" },
+      { name: "Acapulco Gold Body"},
+      { name: "Acapulco Gold Eyes"},
+      { name: "Acapulco Gold Cigarette"},
+    ],
+  },
+  {
+    growEditionSizeTo: 14,
+    layersOrder: [
+      { name: "Acapulco Gold Background" },
+      { name: "Acapulco Gold Body"},
+      { name: "Acapulco Gold Eyes"},
+      { name: "Acapulco Gold Bong"},
+      { name: "Acapulco Gold BongWater"},
+    ],
+  },
+  {
+    growEditionSizeTo: 17,
+    layersOrder: [
+      { name: "Black Poison Background" },
+      { name: "Black Poison Body"},
+      { name: "Black Poison Eyes"},
+      { name: "Black Poison Mouth"},
+    ],
+  },
+  {
+    growEditionSizeTo: 19,
+    layersOrder: [
+      { name: "Black Poison Background" },
+      { name: "Black Poison Body"},
+      { name: "Black Poison Eyes"},
+      { name: "Black Poison Cigarette"},
+    ],
+  },
+  {
+    growEditionSizeTo: 22,
+    layersOrder: [
+      { name: "Black Poison Background" },
+      { name: "Black Poison Body"},
+      { name: "Black Poison Eyes"},
+      { name: "Black Poison Bong"},
+      { name: "Black Poison BongWater"},
+    ],
+  },
+  {
+    growEditionSizeTo: 25,
+    layersOrder: [
+      { name: "Blue Mystic Background" },
+      { name: "Blue Mystic Body"},
+      { name: "Blue Mystic Eyes"},
+      { name: "Blue Mystic Mouth"},
+    ],
+  },
+  {
+    growEditionSizeTo: 25,
+    layersOrder: [
+      { name: "Blue Mystic Background" },
+      { name: "Blue Mystic Body"},
+      { name: "Blue Mystic Eyes"},
+      { name: "Blue Mystic Cigarette"},
+    ],
+  },
+  {
+    growEditionSizeTo: 27,
+    layersOrder: [
+      { name: "Blue Mystic Background" },
+      { name: "Blue Mystic Body"},
+      { name: "Blue Mystic Eyes"},
+      { name: "Blue Mystic Bong"},
+      { name: "Blue Mystic BongWater"},
+    ],
+  },
+  {
+    growEditionSizeTo: 30,
+    layersOrder: [
+      { name: "Cookies Background" },
+      { name: "Cookies Body"},
+      { name: "Cookies Eyes"},
+      { name: "Cookies Mouth"},
+    ],
+  },
+  {
+    growEditionSizeTo: 35,
+    layersOrder: [
+      { name: "Cookies Background" },
+      { name: "Cookies Body"},
+      { name: "Cookies Eyes"},
+      { name: "Cookies Cigarette"},
+    ],
+  },
+  {
+    growEditionSizeTo: 42,
+    layersOrder: [
+      { name: "Cookies Background" },
+      { name: "Cookies Body"},
+      { name: "Cookies Eyes"},
+      { name: "Cookies Bong"},
+      { name: "Cookies Bong Water"},
+    ],
+  },
+
+
 ];
 
 const shuffleLayerConfigurations = true;
@@ -44,17 +158,17 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'the High NFTrees Test';
+const CONTRACT_NAME = 'the High NFTrees 42.0';
 const CONTRACT_SYMBOL = 'HNFTR';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x5A735A050f761c7327625eA73B8C95E6978bc45a';
 const TREASURY_ADDRESS = '0x5A735A050f761c7327625eA73B8C95E6978bc45a';
-const MAX_SUPPLY = 5; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 2; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const MAX_SUPPLY = 42; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MINT_PRICE = 0.01; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 5; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-03-20T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-04-06T04:00:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
@@ -88,12 +202,12 @@ try {
 // END NFTPort Info
 
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: "HNFTR",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "thehighnftrees.com",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "5A735A050f761c7327625eA73B8C95E6978bc45a",
       share: 100,
     },
   ],
